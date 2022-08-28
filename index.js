@@ -13,7 +13,7 @@ let currentUser='';
 // const dotenv = require("dotenv");
 
 const app = new express();
-const port = 4400;
+const port = process.env.PORT || 4400;
 
 // dotenv.config();
 app.use(cors());
